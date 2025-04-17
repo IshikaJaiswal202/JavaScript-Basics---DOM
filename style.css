@@ -1,0 +1,23 @@
+#heading{
+    color: brown;
+    font-family: 'Courier New', Courier, monospace;
+}
+.myclass{
+   color: cadetblue;
+   font-size: xx-large;
+   font-style: oblique;
+   font-weight: 100px;
+}
+table
+{
+    border-style: dashed;
+    border-color: blueviolet;
+}
+body{
+    background-color: chocolate;
+}
+#mybutton
+{
+    background-color: black;
+    color: white;
+}
