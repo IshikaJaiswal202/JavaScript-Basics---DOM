@@ -78,3 +78,34 @@ let geth3tag=document.querySelector("#hello");
  //console.dir(appendValue);
 
 
+ // to get the value of the id , class name of attribute 
+let getButton =document.querySelector("button");
+console.log("get the button");
+let butt=getButton.getAttribute("id");
+console.dir(butt);
+console.dir(getButton.getAttribute("name"));
+// to set the value of attribute  
+console.log("set the attribute ..." );
+getButton.setAttribute("name","newButton")
+console.log(getButton.getAttribute("name"));
+
+// to change the css at runtime use node.style
+getButton.style.backgroundColor="pink";
+getButton.style.color="white";
+getButton.style.fontSize="22px";
+//getButton.style.visibility="hidden";
+
+// to add the new element to doc. have two steps 
+// first create the docunment 
+let secondButton=document.createElement("button");
+secondButton.innerText="first click !!";
+
+//second add this to document it will add to the with any node 
+// so i want to add with suppose div tag 
+// first access the div tag and then append it 
+let getDiv=document.querySelector("div");
+   getDiv.append(secondButton);// inside bottom of the div 
+   getDiv.prepend(secondButton);//inside top of the div
+   getDiv.before(secondButton);// before div 
+   getDiv.after(secondButton);//after div
+
